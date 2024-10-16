@@ -1,0 +1,22 @@
+void main() {
+  // Membuat set dengan nama "Dicky" untuk menyimpan nama-nama
+  Set<String> dickyNames = {'Aji', 'Budi', 'Cici', 'Aji'}; // 'Aji' akan otomatis dihapus karena set tidak mengizinkan duplikasi
+
+  // Menampilkan isi set
+  print('Nama-nama dalam set Dicky: ' + dickyNames.toString());
+
+  // Menambahkan nama baru
+  dickyNames.add('Doni');
+  print('Setelah menambahkan Doni: ' + dickyNames.toString());
+
+  // Menghapus nama
+  dickyNames.remove('Budi');
+  print('Setelah menghapus Budi: ' + dickyNames.toString());
+
+  // Mengecek apakah nama ada dalam set
+  print('Apakah Cici ada dalam set? ' + (dickyNames.contains('Cici') ? 'Ya' : 'Tidak'));
+  print('Apakah Aji ada dalam set? ' + (dickyNames.contains('Aji') ? 'Ya' : 'Tidak'));
+
+  // Menampilkan jumlah nama dalam set
+  print('Jumlah nama dalam set Dicky: ' + dickyNames.length.toString());
+}
